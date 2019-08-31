@@ -10,9 +10,9 @@
 
 function info_judge (string) {
 	if(string.length>=4){
-		if(string.search('考试安排')!=-1)return 1;
-		if(string.search('补考安排')!=-1)return 2;
-		if(string.search('补考信息表')!=-1)return 2;
+		if(string.search('考试安排')!==-1)return 1;
+		if(string.search('补考安排')!==-1)return 2;
+		if(string.search('补考信息表')!==-1)return 2;
 	}
 	return 0;
 }
@@ -23,18 +23,18 @@ function info_judge (string) {
 	for(var i = 0;i<ls.length;++i){
 		var string = ls[i].title;
 		var res = info_judge(string);
-		if(res == 1) {
+		if(res === 1) {
 			ls[i].style.color='red';
 			continue;
 		}
-		else if(res == 2) {
+		else if(res === 2) {
 			ls[i].style.color='#FFBB00';
 			continue;
 		}
 		string = ls[i].innerText;
 		res = info_judge(string);
-		if(res == 1)ls[i].style.color='red';
-		else if(res == 2)ls[i].style.color='#FFBB00';
+		if(res === 1)ls[i].style.color='red';
+		else if(res === 2)ls[i].style.color='#FFBB00';
 	}
 	// Your code here...
 })();

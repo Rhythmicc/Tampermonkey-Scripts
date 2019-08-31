@@ -16,6 +16,6 @@
 		var viewName = this.value;
 		viewName = $.trim(viewName);
 		this.value = viewName;
-		if(viewName.length==4)document.getElementById('loginButton').click();
+		if(viewName.length===4)document.getElementById('loginButton').click();
 	});
 })();
