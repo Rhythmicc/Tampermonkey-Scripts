@@ -8,7 +8,7 @@
 // @grant        none
 // ==/UserScript==
 
-function info_judge (string:string) {
+function info_judge (string) {
 	if(string.length>=4){
 		if(string.search('考试安排')!==-1)return 1;
 		if(string.search('补考安排')!==-1)return 2;
