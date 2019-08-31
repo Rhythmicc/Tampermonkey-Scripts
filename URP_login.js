@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  try to take over the world!
 // @author       RhythmLian
-// @match        http://urp.cup.edu.cn/login
+// @match        http://urp.cup.edu.cn/login*
 // @grant        none
 // ==/UserScript==
 
