@@ -5,5 +5,4 @@
 
 - CUP_jwc_highlight.js: 
   - **考试安排信息高亮标记**  (_make exam infomation high lights_)
-  - ![效果](./img/CUP_jwc_highlight.png)
-
+  ![效果](./img/CUP_jwc_highlight.png)
