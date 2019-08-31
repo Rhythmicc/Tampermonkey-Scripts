@@ -8,7 +8,7 @@
 // @grant        none
 // ==/UserScript==
 
-function info_judge (string) {
+function info_judge (string:string) {
 	if(string.length>=4){
 		if(string.search('考试安排')!==-1)return 1;
 		if(string.search('补考安排')!==-1)return 2;
@@ -18,11 +18,10 @@ function info_judge (string) {
 }
 
 (function() {
-	'use strict';
-	var ls = document.getElementsByTagName('a')
-	for(var i = 0;i<ls.length;++i){
-		var string = ls[i].title;
-		var res = info_judge(string);
+	let ls = document.getElementsByTagName('a');
+	for(let i = 0;i<ls.length;++i){
+		let string = ls[i].title;
+		let res = info_judge(string);
 		if(res === 1) {
 			ls[i].style.color='red';
 			continue;
@@ -36,5 +35,4 @@ function info_judge (string) {
 		if(res === 1)ls[i].style.color='red';
 		else if(res === 2)ls[i].style.color='#FFBB00';
 	}
-	// Your code here...
 })();
